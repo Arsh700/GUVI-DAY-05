@@ -59,37 +59,36 @@
 
 /*program to check if a number is prime or not*/
 
-// take input from the user
-// const number = 2;
-// let isPrime = true;
 
-// // check if number is equal to 1
-// if (number === 1) {
-//     console.log("1 is neither prime nor composite number.");
-// }
+const number = 100;
 
-// // check if number is greater than 1
-// else if (number > 1) {
+var primeNumber = function(number){
 
-//     // looping through 2 to number-1
-//     for (let i = 2; i < number; i++) {
-//         if (number % i == 0) {
-//             isPrime = false;
-//             break;
-//         }
-//     }
+let isPrime = true;
 
-//     if (isPrime) {
-//         console.log(`${number} is a prime number`);
-//     } else {
-//         console.log(`${number} is a not prime number`);
-//     }
-// }
+if (number === 1) {
+    console.log("1 is neither prime nor composite number.");
+}
+else if (number > 1) {
+    for (let i = 2; i < number; i++) {
+        if (number % i == 0) {
+            isPrime = false;
+            break;
+        }
+    }
 
-// // check if number is less than 1
-// else {
-//     console.log("The number is not a prime number.");
-// }
+    if (isPrime) {
+        console.log(`${number} is a prime number`);
+    } else {
+        console.log(`${number} is a not prime number`);
+    }
+}
+
+else {
+    console.log("The number is not a prime number.");
+}}
+primeNumber(number);
+
 /*Return all the palidrom in an array*/
 
 
@@ -187,4 +186,4 @@
 //     console.log(userInput)
 //     }
 // }
-// result(["1","2","3","4","5"],5);
+// result([1,2,3,4,5],5);

@@ -165,7 +165,7 @@
 // var k = 5;
 // (function(input,k)
 // {
-
+   
 //     if((typeof input)== (typeof 1))
 //     {
 //     var no = input;
